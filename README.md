@@ -11,16 +11,19 @@ Durch Erfassen der verschiedenen Werte sollen mögliche Korrelationen zwischen d
 #### Aus der senseBox:edu
 *   Genuino UNO
 *   Ethernet Shield v1.0
-*   senseBox-Shield
-*    Temperatur- und Luftfeuchtigkeitssensor
-*    UV-Sensor
+*   Genuino Board
+*    Temperatur- und Luftfeuchtigkeitssensor (HDC 1008)
+*    UV-Sensor (VEML6070)
 *    Jumpwires
+*    Strom-Adapter
  
 #### Zusätzliche Hardware
 *    Base Shield v2.0
-*    Feinstaubsensor
+*    Feinstaubsensor (SHINYEI PPD42)
 *    Verbindungskabel
 *    Netzwerkkabel
+*    Panzertape, Isolierband und Heißkleber
+*    WetterBox der Firma FIBOX, sowie kleinere Schutzboxen für Außensensoren
  
  
 ## Setup Beschreibung
@@ -28,9 +31,13 @@ Durch Erfassen der verschiedenen Werte sollen mögliche Korrelationen zwischen d
  
 * Ethernet Shield v1.0 auf das Genuino UNO stecken.
 * Base Shield v2.0 auf das Ethernet Shield v1.0 stecken.
-* Anschließen von Temperatur-/bzw. Luftfeuchtigkeits- und UV-Sensor über das Genunio Board an das Base Shield v2.0.
+* Anschließen von Temperatur-/bzw. Luftfeuchtigkeits- und UV-Sensor über das Genunio Board an das Base Shield v2.0 (wie in Softwaresketch beschrieben).
 * Anschließen des Feinstaubsensors an Port D8 des Base Shield v2.0.
+* Löcher in die WetterBoxen bohren um die korrekte Verkabelung und die geeignete Luftzufuhr für die Sensoren zu gewährleisten.
+* Montieren der Messstation mit UV-Sensor in die FIBOX-WetterBox mittels Heißkleber.
+* Befestigung der Außensensoren in die kleineren WetterBoxen und anschließend Befestigung an der FIBOX-Wetterbox mittels Heißkleber, Isolierband und Panzertape.
 * Netzwerkkabel an Ethernet Shield v1.0 anschliessen und mit dem Router(sowie der Stromzufuhr) verbinden.
+* Messstation an geeignetem Ort aufstellen.
  
  
 #### Softwaresketch
@@ -253,10 +260,7 @@ Die Registrierung erfolgt über Angabe des Namens und der E-Mail-Adresse auf dem
 ## Stationsaufbau
 Die Station sollte so aufgebaut werden, dass die Verfälschung der Daten möglichst gering ausfällt und alle Sensoren funktionieren können. In unseren Fall  haben wir den Feinstaubsensor und den Temperatur- und Luftfeuchtigkeitssensor so angebracht, dass sie keinen Schatten auf unseren UV-Sensor werfen. Diese beiden Sensoren sind außerdem außerhalb der Box angebracht, damit die Luftzufuhr gewährleistet ist. Jedoch müssen sie trotzdem vor Nässe geschützt sein.
 
-<image
-src=https://raw.githubusercontent.com/Alina1995/Bilder1/master/13000535_1006850769384804_1440555269_o.jpg width="200"/> <image
-src=https://raw.githubusercontent.com/Alina1995/Bilder1/master/13009932_1006850796051468_131693779_o.jpg width="200"/> <image
-src=https://raw.githubusercontent.com/Alina1995/Bilder1/master/13010003_1006850779384803_1388410211_o.jpg width="200"/>
+<image src=https://raw.githubusercontent.com/a2beckj/Dokumentation_Trefz_Becka/master/IMG-20160419-WA0008.jpg width="200"/> <image src=https://raw.githubusercontent.com/a2beckj/Dokumentation_Trefz_Becka/master/IMG-20160419-WA0010.jpg width="200"/> <image src=https://raw.githubusercontent.com/a2beckj/Dokumentation_Trefz_Becka/master/IMG-20160419-WA0009.jpg width="200"/>
  
  
 
